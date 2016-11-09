@@ -1,6 +1,6 @@
-# thinktank
-The Haumea thinktank.
+# spec
+The Haumea spec and thinktank.
 
 ## What is this?
-
-This repo is for discussing feature changes to the Haumea language as a whole, as opposed to one specific implementation.
+This repo holds the Haumea specification.
+It is also for discussing feature changes to the Haumea language as a whole, as opposed to one specific implementation.
