@@ -1,7 +1,7 @@
 # Variables
 In Haumea, all variables must:
 - Have a name comprised of uppercase characters, lowercase characters, and `_`
-- Have a [type](#types)
+- Have a _constant_ [type](#types)
 - Never share a name with a keyword (`do`, `to`, `end`, `if`, etc)
 
 You can use a variable simply by using its name:
@@ -53,7 +53,12 @@ Haumea currently has three types;
 | **integer**  | Whole number | `172`     |
 | **float**    | Decimal      | `1.0`     |
 
-You cannot change the type of a variable.
+## Strings
+Strings are written enclosed in `"` or `'`. In order to write `"` within a `"`-delimeted string, it is required to _escape_ it - using `\\`, e.g. `\"`:
+```c
+'Hello, I\'m Bob.'        /* Hello, I'm Bob. */
+"How are you, \"Bob\"?"   /* How are you, "Bob"? */
+```
 
 ## None
 Note, there _is_ another type, `none`, which **cannot be assigned to a variable**. `none` is returned automatically by all [functions](functions.md) that do not have a [return type](functions.md#return-type).
