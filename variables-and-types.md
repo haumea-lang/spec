@@ -46,7 +46,8 @@ Which declares a string called `planet` with the value `"Earth"`.
 
 # Types
 
-Haumea currently has three types;
+Haumea currently has three types.
+
 |  identifier  | description  | example   |
 | ------------ | ------------ | --------- |
 | **string**   | Text         | `"Hello"` |
