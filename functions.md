@@ -1,12 +1,22 @@
 # Functions
-## Definitions
-You can declare a function with the `to` keyword like so:
+
+## Declare
+You can declare a function with the **to** keyword like so:
+
 ```
-to <name> [with (<param-1>, ... <param-n>) <statement>
+to <name> [with (<variable>, <variable>, <variable>...) [as <type>] <statement>
 ```
-where `<name>` is just any identifier (A string that matches the RE /a-zA-Z_/), <param-n> is also an identifier that is a parameter to the function, and <statement> is the statement that is run when the function is executed. The parameter list (`with (<param-1>, ... <param-n>)`) is optional, and if it is omitted the function is assumed to take zero parameters. Some example function definitions:
+
+Where:
+- `<name>` is just any identifier (a word with only uppercase/lowercase characters and `_`)
+- `<variable>`s are also identifiers that are taken as parameters.
+- `<statement>` is the statement that is run when the function is executed.
+- The **parameter list** (`with (<variable>, <variable>, <variable>)`) is optional, and if it is omitted the function is assumed to take zero parameters.
+- The **return type** (`as <type>`) is a [type](variables-and-types.md#types). If ommitted, the function must [not return anything](variables-and-types.md#none).
+
+Some examples:
 ```
-to add_one with (n) return n + 1
+to add_one with (integer n) as integer return n + 1
 
 to foo do
     display(1)
