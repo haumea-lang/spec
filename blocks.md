@@ -1,5 +1,5 @@
 # Blocks
-To combine multiple statements itno one, Haumea provides the `do ... end` statement. It works like so:
+To combine multiple statements into one, Haumea provides the `do ... end` statement. It works like so:
 
 ```
 do
